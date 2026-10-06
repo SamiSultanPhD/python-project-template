@@ -1,0 +1,3 @@
+# Do not track or push data files
+data/*
+!data/.gitkeep
