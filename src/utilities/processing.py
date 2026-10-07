@@ -14,21 +14,15 @@ class ProcessingClass():
     def __init__(self, **kwargs):
         self.args = kwargs
 
-        self.processing_function(
-            # Add required arguments
+        self.data = load.DataClass(**self.args)
 
-        )
-
-        self.data = load.DataClass(
-            # Add required arguments
-
-        )
+        self.processed_data = self.processing_function()
 
     def __repr__(self) -> str:
         return f"ProcessingClass(arguments = {self.args})"
     
     # Processing functions
-    def processing_function(self, **kwargs):
+    def processing_function(self):
         """
         Function to load all data
 

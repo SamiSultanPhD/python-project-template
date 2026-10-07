@@ -10,8 +10,10 @@ from src.utilities import processing
 def main():
     result = processing.ProcessingClass(
         # Add required arguments
-
     )
+
+    result.processed_data
+    print("Template ran successfully")
 
 if __name__ == '__main__':
     main()
