@@ -11,8 +11,9 @@ class DataClass():
     The aim of this class.
     """
     def __init__(self, **kwargs) -> None:
+        self.args = kwargs
      
-        self.data_function(**kwargs)
+        self.data_function()
         
     def data_function(self, **kwargs):
         """
