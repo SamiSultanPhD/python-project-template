@@ -13,3 +13,7 @@ data/input/*
 !data/output/
 data/output/*
 !data/output/.gitkeep
+
+# Ignore python cache files
+__pycache__/
+*.pyc
