@@ -1,3 +1,15 @@
-# Do not track or push data files
+# Ignore all data
 data/*
+
+# Keep the data directory
 !data/.gitkeep
+
+# Keep the input directory, but ignore its contents
+!data/input/
+data/input/*
+!data/input/.gitkeep
+
+# Keep the output directory, but ignore its contents
+!data/output/
+data/output/*
+!data/output/.gitkeep
