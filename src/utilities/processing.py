@@ -16,7 +16,7 @@ class ProcessingClass():
 
         self.data = load.DataClass(**self.args)
 
-        self.processed_data = self.processing_function()
+        self.processed_data = self.processing_function(**self.args)
 
     def __repr__(self) -> str:
         return f"ProcessingClass(arguments = {self.args})"
